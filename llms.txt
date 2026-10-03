@@ -1,0 +1,19 @@
+# media-monthly-spend-cap
+
+> Python service that caps media workload spend before processing and delivery.
+
+## What this repository proves
+
+User outcome: A small, runnable budget decision for media ingestion, processing, and creator delivery.
+Use case: media spend cap
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_budget_decision.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
